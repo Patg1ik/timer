@@ -57,6 +57,7 @@ function pauseTimer() {
 }
 
 function clearTimer() {
+  state.value = 'stopped';
   clearInterval(interval.value);
   interval.value = undefined;
   timer.value = 0;
